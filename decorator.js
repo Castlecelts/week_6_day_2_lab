@@ -23,8 +23,15 @@ Decorator.prototype.hasEnoughPaint = function (room) {
   }
 };
 
-Decorator.prototype.methodName = function () {
-
+Decorator.prototype.paintRoom = function (room) {
+  if (this.hasEnoughPaint(room) === true){
+    room.paintRoom()
+  }
+  else {
+    {
+      return false;
+    }
+  }
 };
 
 module.exports = Decorator;
