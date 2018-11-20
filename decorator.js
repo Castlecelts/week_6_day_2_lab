@@ -14,4 +14,17 @@ Decorator.prototype.totalLitres = function () {
   return stockVolume;
 };
 
+Decorator.prototype.hasEnoughPaint = function (room) {
+  if (this.totalLitres() >= room.area) {
+    return true;
+  }
+  else {
+    return false;
+  }
+};
+
+Decorator.prototype.methodName = function () {
+
+};
+
 module.exports = Decorator;
