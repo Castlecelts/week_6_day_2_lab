@@ -10,4 +10,8 @@ Paint.prototype.checkIfEmpty = function () {
   }
 };
 
+Paint.prototype.emptyPaint = function () {
+  this.litres = 0
+};
+
 module.exports = Paint;
